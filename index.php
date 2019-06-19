@@ -37,7 +37,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
     <hr>
     <div class="form-group">
 				<form class="d-flex justify-content-left" action="index.php" method="post" enctype="multipart/form-data">
-                    <label for="exampleinput">Pilih Gambar yang akan di Analisa</label>    
+                    <label for="exampleinput">Pilih Gambar yang akan di Analisa </label>    
                     <input type="file" name="fileToUpload" id="fileToUpload" required>
                 </div>
                 <button class="btn btn-primary" type="submit" name="submit">Upload</button>
@@ -63,7 +63,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 							<td>
 								<form action="hasilanalisa.php" method="post">
 									<input type="hidden" name="url" value="<?php echo $blob->getUrl()?>">
-									<input type="submit" name="submit" value="Hasil Analisa" class="btn btn-primary">
+									<input type="submit" name="submit" value="Hasil Analisa" class="btn btn-primary btn-sm">
 								</form>
 							</td>
 						</tr>
